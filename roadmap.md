@@ -1,4 +1,53 @@
-[fundamentals](#fundamentals)
+### [fundamentals](#fundamentals)
+
+[hardware](#hardware)
+
+[connection types](#connections)
+
+### [operating systems](#operating-systems)
+
+[windows](#windows)
+
+[linux](#linux)
+
+[mac](#mac)
+
+### [network](#network-1)
+
+[subnet](#subnet)
+
+[internet protocol](#internet-protocol)
+
+[network topology](#network-topology)
+
+[virtualisation](#virtualisation)
+
+[tools](#tools-network)
+
+[authentication](#authentication)
+
+### [security](#security)
+
+[cryptography](#cryptography)
+
+[frameworks](#frameworks)
+
+[secure vs unsecure protocols](#secure-vs-unsecure-protocols)
+
+[incident response process](#incedent-response-process)
+
+[threat classifications](#threat-classifications)
+
+[common standards](#common-standards)
+
+[attack-types](#attack-types)
+
+[tools](#tools-incident-response-and-discovery)
+
+[logs](logs)
+
+
+
 
 # fundamentals
 
@@ -22,7 +71,7 @@
 
 **output devices** - hardware that converts information or data into a human-perceptible form or, historically, into a physical machine-readable form for use with other non-computerized equipment; it can be text, graphics, tactile, audio, or video e.g. *monitors, printers* and *sound cards*
 
-## connection types
+## connections
 
 **bluetooth** - short-range wireless technology standard used for exchanging data between fixed and mobile devices over short distances; while it offers convenience for connecting peripherals and transferring information, it also presents several security concerns in the cybersecurity landscape; **bluetooth vulnerabilities** can potentially allow attackers to intercept communications, execute malicious code, or gain unauthorized access to devices; **common attacks include bluejacking, bluesnarfing, and bluebugging**; to mitigate these risks, cybersecurity professionals recommend regularly updating device firmware, using the latest bluetooth protocols, enabling encryption, and turning off bluetooth when not in use; despite ongoing security improvements, bluetooth remains an attack vector that requires vigilant monitoring and protection in both personal and enterprise environments
 
@@ -34,13 +83,7 @@
 
 **IoT** - ***internet of things*** describes devices with sensors, processing ability, software and other technologies that connect and exchange data with other devices and systems over the Internet or other communication networks
 
-## computer networking
-
-computer networking is the practice of connecting computers and devices to share data and resources; involving use of **protocols like TCP/IP for communication, hardware such as routers and switches for directing traffic, and various network topologies** (star, mesh, bus) for organizing connections
-
-networks can be categorized by size and scope, from **small local area networks** (***LANs***) to **wide area networks** (***WANs***) that span large geographical areas; key concepts include **IP addressing, subnetting, DNS** for name resolution, and network security measures
-
-## os-independant troubleshooting
+**computer networking** - the practice of connecting computers and devices to share data and resources; involving use of **protocols like TCP/IP for communication, hardware such as routers and switches for directing traffic, and various network topologies** (star, mesh, bus) for organizing connections; networks can be categorized by size and scope, from **small local area networks** (***LANs***) to **wide area networks** (***WANs***) that span large geographical areas; key concepts include **IP addressing, subnetting, DNS** for name resolution, and network security measures
 
 ---
 
@@ -54,6 +97,9 @@ networks can be categorized by size and scope, from **small local area networks*
 - preform CRUD on files
 - troubleshooting
 - common commands
+
+## os-independant troubleshooting
+
 ## windows
 
 ## linux
@@ -70,7 +116,9 @@ networks can be categorized by size and scope, from **small local area networks*
 - ssl and tls basics
 - basics of NAS and SAN
 
-## subnetting basics
+## internet protocol
+
+## subnet
 
 ### pubic vs private ip address
 
@@ -81,8 +129,6 @@ networks can be categorized by size and scope, from **small local area networks*
 - CIDR
 - subnet mask
 - default gateway
-
-## understanding terminology
 
 - VLAN
 - DMZ
@@ -109,7 +155,7 @@ networks can be categorized by size and scope, from **small local area networks*
 - mesh
 - buns
 
-## net topologies 
+## network topology
 
 - SSH
 - RDP
@@ -125,7 +171,7 @@ networks can be categorized by size and scope, from **small local area networks*
 - hostOS 
 - VM
 
-## troubleshooting tools
+## tools: network
 
 - ipconfig
 - ping
@@ -138,14 +184,14 @@ networks can be categorized by size and scope, from **small local area networks*
 - tracert
 - nslookup
 - iptables
-  
-### packet sniffers
 
-### port scanners
+packet sniffers
 
-### protocol analyzers
+port scanners
 
-## authentication methods
+protocol analyzers
+
+## authentication
 
 - kerberos
 - RADIUS
@@ -156,7 +202,7 @@ networks can be categorized by size and scope, from **small local area networks*
 
 ---
 
-# security skills and knowledge
+# security
 
 - common hacking tools
 - common exploit frameworks
@@ -168,28 +214,16 @@ networks can be categorized by size and scope, from **small local area networks*
 - reverse engineering
 - pen testing rules and engagement
 - perimiter vs DMZ vs segmentation
-- concepts of zero trust
-- role of compliance and auditors
-- definition of risk
-- backups and resiliency
-- cyber kill chain
-- MFA & 2FA 
-- honeypots
-- OS hardening
-- concepts of isolation
-- basics of IDS and IPS
-- authentication vs authorisation 
-- blue /red / purple teams
-- false negative /false positive 
-- true negative / true positive 
-- threat intel & OSINT
-- handshakes
-- CIA triad
-- privelage escalation
-- web based attacks and OWASP10
-- how malware works and types
 
-## tools for incident response and discovery
+## common standards 
+
+- iso
+- rmf
+- nist
+- cis
+- csf
+
+## tools: incident response and discovery
 
 - dig
 - nmap
@@ -211,7 +245,62 @@ networks can be categorized by size and scope, from **small local area networks*
 - memdump
 - FTK imager
 
-## basics of cryptography
+## tools for unintended purposes
+
+- lolbas
+- gtfobins
+- wacoms
+
+## logs
+
+- event logs
+- sysogs
+- netflow
+- packet captures
+- firewall logs
+
+## hardening concepts
+
+- mac based
+- nac based
+- port blocking
+- group policy
+- sinkholes
+- acls
+- patching
+- jump server
+- endpoint security
+
+## tools: threat analysis
+
+- virus total 
+- urlscan
+- anyrun
+- joe sandbox
+- urlvoid
+- whois
+
+## understand audience
+
+- stakehlders
+- hr
+- legal 
+- compliance
+- management
+
+- concepts of zero trust
+- role of compliance and auditors
+- definition of risk
+- backups and resiliency
+- cyber kill chain
+- MFA & 2FA 
+- honeypots
+- OS hardening
+- concepts of isolation
+- basics of IDS and IPS
+- authentication vs authorisation 
+
+## cryptography
 
 - salting
 - hashing
@@ -225,44 +314,6 @@ networks can be categorized by size and scope, from **small local area networks*
 - diamond model
 - kill chain
 - ATT&CK
-
-## attack types and differences 
-
-- phishing
-- wishing
-- whaling
-- smishing
-- spam vs spim
-- shoulder surfing 
-- tailgating
-- dumpster diving
-- zero day
-- social engineering
-- reconnaissance 
-- impersonation
-- watering hole attack
-- drive by attack
-- typo squatting
-- brute force vs password spray
-
-## common attacks 
-
-- dos vs ddos
-- MITM
-- CSRF
-- spoofing
-- sql injection
-- xxs
-- evil twin
-- vlan hopping
-- dns poisoning
-- deauth attack
-- replay attack
-- rogue access point
-- buffer overflow
-- memory leak
-- pass the hash
-- directory traversal
 
 ## understand 
 
@@ -296,7 +347,7 @@ networks can be categorized by size and scope, from **small local area networks*
 - ac
 - wpa vs wpa2 vs wpa3 vs wep
 
-## incedent responce process
+## incedent response process
 
 - preparation 
 - identification
@@ -305,62 +356,60 @@ networks can be categorized by size and scope, from **small local area networks*
 - recovery 
 - lesson learned
 
+
 ## threat classifications
 
 - zero day
 - known vs unknown
 - apt
 
-## common standards 
+- blue /red / purple teams
+- false negative /false positive 
+- true negative / true positive 
+- threat intel & OSINT
+- handshakes
+- CIA triad
+- privelage escalation
+- web based attacks and OWASP10
+- how malware works and types
 
-- iso
-- rmf
-- nist
-- cis
-- csf
+## attack types
 
-## tools for unintended purposes
+- phishing
+- wishing
+- whaling
+- smishing
+- spam vs spim
+- shoulder surfing 
+- tailgating
+- dumpster diving
+- zero day
+- social engineering
+- reconnaissance 
+- impersonation
+- watering hole attack
+- drive by attack
+- typo squatting
+- brute force vs password spray
 
-- lolbas
-- gtfobins
-- wacoms
+### common attacks 
 
-## find and use these logs
-
-- event logs
-- sysogs
-- netflow
-- packet captures
-- firewall logs
-
-## hardening concepts
-
-- mac based
-- nac based
-- port blocking
-- group policy
-- sinkholes
-- acls
-- patching
-- jump server
-- endpoint security
-
-## common tools 
-
-- virus total 
-- urlscan
-- anyrun
-- joe sandbox
-- urlvoid
-- whois
-
-## understand audience
-
-- stakehlders
-- hr
-- legal 
-- compliance
-- management
+- dos vs ddos
+- MITM
+- CSRF
+- spoofing
+- sql injection
+- xxs
+- evil twin
+- vlan hopping
+- dns poisoning
+- deauth attack
+- replay attack
+- rogue access point
+- buffer overflow
+- memory leak
+- pass the hash
+- directory traversal
 
 ---
 
