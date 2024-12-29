@@ -8,6 +8,8 @@
 
 **Blue team:** A blue team is a group of individuals who perform an analysis of information systems to ensure security, identify security flaws, verify the effectiveness of each security measure, and to make certain all security measures will continue to be effective after implementation. As a result, blue teams were developed to design defensive measures against red team activities. In infosec exercises, Blue teamers are playing the role of defenders.
 
+
+**Tiger team:** A tiger team is a team of specialists assembled to work on a specific goal,[1] or to solve a particular problem.
 **Penetration tester:** An ethical hacker who practices security, tests applications and systems to prevent intrusions or find vulnerabilities.
 
 **Security researcher:** Someone who practices pen testing and browses the web to find phishing/fake websites, infected servers, bugs or vulnerabilities. They can work for a company as a security consultant and are most likely a Blue teamer.
