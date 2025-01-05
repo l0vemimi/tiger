@@ -1,0 +1,49 @@
+##
+## bootswatch colour themes listed below:
+## https://mkdocs.github.io/mkdocs-bootswatch/
+##
+## base
+site_name: tigerteam
+locale: en
+dev_addr: 127.0.0.1:8000
+## themeing
+theme:
+  name: terminal
+  colorscheme: github
+  nav:
+    - home: index.md
+    - osint: osint.md
+    - zerotrust: zerotrust.md
+  navs_style: light
+  color_mode: light
+  highlightjs: true
+  hljs_style: github
+## page style
+  pages: 
+  - home: index.md
+  - osint: osint.md
+  - zerotrust: zerotrust.md
+  - tiger: tiger.md
+footer: disabled
+site_nav: enabled
+navigation_depth: 4
+use_directory_urls: true
+shortcuts:
+  help: 191    # ?
+  next: 78     # n
+  previous: 80 # p
+  search: 83   # s
+## archive
+#validation:
+#  omitted_files: warn
+#  absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
+#  unrecognized_links: warn
+#  anchors: warn  # New in MkDocs 1.6
+
+
+
+
+
+  
+
+
