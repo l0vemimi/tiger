@@ -1,4 +1,14 @@
 # home
+                
+    .　 +⠀   ⠀
+    ⠀˚⠀ ⣴⠟⠉⠉⠛⢦⡀⢀⣴⠛⠉⠈⠙⠻⣄
+    ⠀⠀⣼⠃⠀⠀⠀⠀⠀⠙⠋⠀⠀⠀⠀⠀⠀⠹⣦
+    ⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿
+    ⠀⠀⠿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡆
+    ⠀⠀⠀⢻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠃
+    ⠀⠀⠀⠀⠀⠻⢦⣄⠀⠀⠀⠀⠀⣠⡴⠛
+    ⠀⠀⠀⠀⠀⠀⠀⠉⠛⠶⣄⠶⠋ ⠀⠀⠀+.  *
+
 
 - [home](#home)
 - [pages](#pages)
@@ -200,3 +210,6 @@
 [crackstation](https://crackstation.net/): crack password hashes
 
 [cyberchef](https://gchq.github.io/cyberchef/): decrypt hashes with many more formats
+
+
+    
