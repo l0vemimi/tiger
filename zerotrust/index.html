@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>zerotrust - tigerteam</title>
+
+
+<link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/terminal.css" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "..",
+    shortcuts = "{}";
+</script>
+<script src="../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">tigerteam</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href=".." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../osint/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">osint</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../ports/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">ports</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../tiger/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">tiger</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="./" class="menu-item active" property="item" typeof="WebPage">
+                        <span property="name">zerotrust</span>
+                    </a>
+                    <meta property="position" content="4">
+                </li>
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="5">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="..">home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../osint/">osint</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../ports/">ports</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../tiger/">tiger</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">zerotrust</span>
+    
+    
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#zerotrust">zerotrust</a></li>
+        <li><a href="#principles">principles</a></li><li><a href="#cia-triad">CIA triad</a></li><li><a href="#system-hardening">system hardening</a></li><li><a href="#isolation">isolation</a></li><li><a href="#intrusion-detection-prevention">intrusion detection &amp; prevention</a></li><li><a href="#access-control">access control</a></li><li><a href="#cryptography">cryptography</a></li><li><a href="#hardening-concepts">hardening concepts</a></li><li><a href="#tools-threat-analysis">tools: threat analysis</a></li><li><a href="#authentication">authentication</a></li><li><a href="#understand">understand</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="zerotrust">zerotrust</h1>
+<ul>
+<li><a href="#zerotrust">zerotrust</a></li>
+<li><a href="#principles">principles</a></li>
+<li><a href="#cia-triad">CIA triad</a></li>
+<li><a href="#system-hardening">system hardening</a></li>
+<li><a href="#isolation">isolation</a></li>
+<li><a href="#intrusion-detection--prevention">intrusion detection \&amp; prevention</a></li>
+<li><a href="#access-control">access control</a><ul>
+<li><a href="#authentication--authorization">authentication \&amp; authorization</a></li>
+<li><a href="#rba">RBA</a></li>
+<li><a href="#abac">ABAC</a></li>
+<li><a href="#security-tokens">security tokens</a></li>
+</ul>
+</li>
+<li><a href="#cryptography">cryptography</a></li>
+<li><a href="#hardening-concepts">hardening concepts</a></li>
+<li><a href="#tools-threat-analysis">tools: threat analysis</a></li>
+<li><a href="#authentication">authentication</a></li>
+<li><a href="#understand">understand</a></li>
+</ul>
+<p>zero trust revolve around the principle of “<strong><em>never trust, always verify</em></strong>,” emphasizing the need to continuously validate every user, device, and application attempting to access resources, regardless of their location within or outside the network perimeter; unlike traditional security models that rely on a strong perimeter defense, zero trust assumes that threats could already exist inside the network and that no <strong><em>entity should be trusted by default</em></strong></p>
+<p>key principles include <strong>strict identity verification, least privilege access, micro-segmentation, and continuous monitoring</strong>; this approach limits access to resources based on user roles, enforces granular security policies, and continuously monitors for abnormal behavior, ensuring that security is maintained even if one segment of the network is compromised</p>
+<p><strong>risk</strong> - the possibility of damage, loss, or any negative occurrence that is caused by external or internal vulnerabilities, that may be avoided through preemptive action; risk is typically characterized by three main components:</p>
+<p><strong>threat</strong> - potential danger to the confidentiality, integrity, or availability of information in your system; threats can be natural e.g., floods, earthquakes, human-made e.g., hackers, malicious software, or due to technical issues e.g., hardware malfunction</p>
+<p><strong>vulnerability</strong> - weakness or flaw in your system that can be exploited by a threat agent to compromise the security of the system; vulnerabilities can exist in various aspects, such as physical access, network services, or security procedures</p>
+<p><strong>impact</strong> - potential amount of damage or loss that can occur to your organization, system, or data due to the successful execution of a threat; impacts can be financial, reputational, operational, or any other negative consequence that your organization faces as a result of a security breach</p>
+<h2 id="principles">principles</h2>
+<p><strong>1. know your architecture, including users, devices, services and data</strong></p>
+<p>in order to get the benefits from zero trust, you need to know about each component of your architecture. this will allow you to identify where your key resources are, the main risks to your architecture and also avoid any late stage pitfalls integrating legacy services which do not support zero trust.</p>
+<p><strong>2. know your user, service and device identities</strong></p>
+<p>an identity can represent a user (a human), service (software process) or device. each should be uniquely identifiable in a zero trust architecture. this is one of the most important factors in deciding whether someone or something should be given access to data or services.</p>
+<p><strong>3. assess your user behaviour, devices and services health</strong></p>
+<p>user behaviour, and service or device health, are important indicators when looking to establish confidence in the security of your systems, making them important signals for policy engines. therefore, having the ability to measure user behaviour, device and service health is key in a zero trust architecture.</p>
+<p><strong>4. use policies to authorise requests</strong></p>
+<p>each request for data or services should be authorised against a policy. the power of a zero trust architecture comes from the access policies you define. policies can also help to facilitate risk managed sharing of data or services with guest users or partner organisations.</p>
+<p>the policy engine is a key component of the zero trust architecture, it uses multiple signals and provides a flexible and secure access control mechanism that adapts to the resources being requested.</p>
+<p><strong>5. authenticate &amp; authorise everywhere</strong></p>
+<p>authentication and authorisation decisions should consider multiple signals, such as device location, device health, user identity and status to evaluate the risk associated with the access request. we do this as we assume the network is hostile and want to ensure all connections that access your data or services are authenticated and authorised.</p>
+<p><strong>6. focus your monitoring on users, devices and services</strong></p>
+<p>in a zero trust architecture, it is highly likely that your monitoring strategy will change to focus on users, devices and services. monitoring of these devices, services and users behaviours will help you establish their health. monitoring should link back to the policies you have set to gain assurance in their configuration.</p>
+<p><strong>7. don't trust any network, including your own</strong></p>
+<p>don't trust any network between the device and the service it's accessing, including the local network. communications over a network, to access data or services, should use a secure transport protocol to gain assurance that your traffic is protected in transit and less susceptible to threats.</p>
+<p>a zero trust architecture changes the way traditional user protections such as malicious website filtering and phishing protection are implemented, these may need to provided by different solutions in your zero trust architecture.</p>
+<p><strong>8. choose services designed for zero trust</strong></p>
+<p>services may not support zero trust and thus may require additional resources to integrate and increase support overhead. in these scenarios it may be prudent to consider alternative products and services that have been designed with zero trust in mind.</p>
+<p>using products that utilise standards-based technologies allows for easier integration and interoperability between services and identity providers.</p>
+<h2 id="cia-triad">CIA triad</h2>
+<ol>
+<li><strong>confidentiality</strong></li>
+<li><strong>integrity</strong></li>
+<li><strong>availability</strong></li>
+</ol>
+<p><strong>confidentiality</strong>: only authorized systems can view sensitive informatio data sent over the net should not be accessed by unauthorized individuals; an attacker can capture data and gain access to information; a primary way to avoid this is to encrypt data e.g. AES (advanced encryption standard), DES (data encryption standard),VPN</p>
+<p><strong>integrity</strong>: making sure the data has not been modified, corruption of data is  failure to maintain data integrity; hashing functions can be used e.g. SHA (secure hash algorithm), MD5 (message direct 5)</p>
+<p><strong>availability</strong>: the network should be readily available to its users; to ensure availability, the sysadmin should maintain hardware, updates and have a plan for fail-over</p>
+<h2 id="system-hardening">system hardening</h2>
+<p>configuring and securing an OS to reduce vulnerabilities and improve its defense against attacks; this process includes disabling unnecessary services and ports, applying security patches and updates, configuring strong authentication mechanisms, enforcing least privilege principles, and enabling firewalls and intrusion detection systems; hardening also involves setting up proper file permissions, securing system logs, and regularly auditing the system to ensure compliance with security policies and best practices; the goal is to minimize the attack surface and protect the OS from potential threats and exploits</p>
+<h2 id="isolation">isolation</h2>
+<p>separating systems, processes, or data to contain potential threats and minimize the impact of security breaches; involves creating boundaries between different components of a system or network to prevent unauthorized access or the spread of malware</p>
+<p>common isolation techniques include virtual machines, containers, network segmentation, and sandboxing; isolation enhances security by limiting the attack surface, containing potential breaches, and protecting sensitive data or critical systems from compromised areas</p>
+<h2 id="intrusion-detection-prevention">intrusion detection &amp; prevention</h2>
+<p><strong>IDS</strong> <strong><em>intrusion detection systems</em></strong> is a critical security tool designed to monitor and analyze network traffic or host activities for any signs of malicious activity, policy violations, or unauthorized access attempts; once a threat or anomaly is identified, the IDS raises an alert to the security administrator for further investigation and possible actions</p>
+<p><strong>IPS</strong> <strong><em>intrusion prevention systems</em></strong> is an advanced security solution closely related to IDS; while an IDS mainly focuses on detecting and alerting about intrusions, an IPS takes it a step further and actively works to prevent the attacks; it monitors, analyzes, and takes pre-configured automatic actions based on suspicious activities, such as blocking malicious traffic, reseting connections, or dropping malicious packets</p>
+<h2 id="access-control">access control</h2>
+<h3 id="authentication-authorization">authentication &amp; authorization</h3>
+<p><strong>authentication</strong> is the process of validating the identity of a user, device, or system; it confirms that the entity attempting to access the resource is who or what they claim to be; the most common form of authentication is the use of usernames and passwords; other methods include: 2FA, biometrics, security tokens or certificates, RBAC, ACLs, ABAC</p>
+<p><strong>authorization</strong> comes into play after the authentication process is complete; it involves granting or denying access to a resource, based on the authenticated user’s privileges; authorization determines what actions the authenticated user or entity is allowed to perform within a system or application</p>
+<h4 id="rba">RBA</h4>
+<p><strong>RBA</strong> - <strong><em>role based access control</em></strong> is a policy-neutral access control mechanism defined around roles and privileges; the components of RBAC such as role-permissions, user-role and role-role relationships make it simple to perform user assignments
+three primary rules are defined for RBAC:
+<strong>1. role assignment</strong>: a subject can exercise a permission only if the subject has selected or been assigned a role;
+<strong>2. role authorization</strong>: a subject's active role must be authorized for the subject. With rule 1 above, this rule ensures that users can take on only roles for which they are authorized;
+<strong>3. permission authorization</strong>: a subject can exercise a permission only if the permission is authorized for the subject's active role. With rules 1 and 2, this rule ensures that users can exercise only permissions for which they are authorized</p>
+<h4 id="abac">ABAC</h4>
+<p><strong>ABAC</strong> - <strong><em>attribute based access control</em></strong>, an access control paradigm whereby a subject's authorization to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and, in some cases, environment attributes</p>
+<h4 id="security-tokens">security tokens</h4>
+<p>only the person who physically holds the token or has access to the software can produce the required code for authentication; these tokens often use time-synchronization technology to generate temporary, highly secure codes that change every few seconds</p>
+<p><strong>Hardware-based Tokens</strong>: These are physical devices, like key fobs or smart cards, that generate a security code at the push of a button or upon being plugged into a computer interface.
+<strong>Software-based Tokens</strong>: Also known as soft tokens, these are applications or software installed on a device, such as a smartphone or computer, generating a code accessible through the device.
+<strong>SMS Tokens</strong>: These tokens involve sending the authentication code via SMS to the user’s mobile device. While popular, they are considered less secure than hardware or software tokens due to the susceptibility of SMS to interception.</p>
+<h2 id="cryptography">cryptography</h2>
+<ul>
+<li>salting</li>
+<li>hashing</li>
+<li>key exchange</li>
+<li>private vs public keys</li>
+<li>PKI</li>
+<li>obfuscation</li>
+</ul>
+<h2 id="hardening-concepts">hardening concepts</h2>
+<ul>
+<li>mac based</li>
+<li>nac based</li>
+<li>port blocking</li>
+<li>group policy</li>
+<li>sinkholes</li>
+<li>acls</li>
+<li>patching</li>
+<li>jump server</li>
+<li>endpoint security</li>
+</ul>
+<h2 id="tools-threat-analysis">tools: threat analysis</h2>
+<ul>
+<li>virus total </li>
+<li>urlscan</li>
+<li>anyrun</li>
+<li>joe sandbox</li>
+<li>urlvoid</li>
+<li>whois</li>
+</ul>
+<h2 id="authentication">authentication</h2>
+<ul>
+<li>kerberos</li>
+<li>RADIUS</li>
+<li>LDAP</li>
+<li>SSO</li>
+<li>certificates</li>
+<li>local auth</li>
+</ul>
+<h2 id="understand">understand</h2>
+<ul>
+<li>SIEM</li>
+<li>SOAR</li>
+</ul>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
