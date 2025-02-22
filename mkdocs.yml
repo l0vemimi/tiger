@@ -16,9 +16,9 @@ theme:
   palette:
     primary: black
 #    primary: custom
-    accent: pink
-    scheme: default  # light mode
-#   scheme: slate    # dark mode
+    accent: red
+#    scheme: default  # light mode
+    scheme: slate    # dark mode
       #
       # red; pink; purple; deep purple; indigo
       # blue; light blue; cyan; tea; green; light green
