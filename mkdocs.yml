@@ -4,7 +4,10 @@ site_author: mimi
 site_url: https://l0vemimi.github.io/tigerdb/
 #edit_uri: edit/main/docs/ # if the repo is tied to the doc
 nav:
-  - Home: 'index.md'
+  - home: 'index.md'
+  - docsdb: 'docsdb.md'
+  - ports: 'ports.md'
+  
 extra_css:
   - stylesheets/extra.css
 dev_addr: 127.0.0.1:8000
