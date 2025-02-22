@@ -5,7 +5,8 @@
 ## base
 site_name: tigerteam
 locale: en
-dev_addr: 127.0.0.1:8000
+#dev_addr: 127.0.0.1:8000
+repo_url: https://github.com/l0vemimi/tigerdb
 ## themeing
 theme:
   name: terminal
