@@ -10,9 +10,13 @@
         <meta name="author" content="mimi">
       
       
-        <link rel="canonical" href="https://l0vemimi.github.io/tigerdb/osint/">
+        <link rel="canonical" href="https://l0vemimi.github.io/tigerdb/docsdb/">
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../ports/">
       
       
       <link rel="icon" href="../None">
@@ -20,7 +24,7 @@
     
     
       
-        <title>osint - tigerdb</title>
+        <title>docsdb - tigerdb</title>
       
     
     
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#osint" class="md-skip">
+        <a href="#security" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              osint
+              docsdb
             
           </span>
         </div>
@@ -190,7 +194,7 @@
   
     
   
-  Home
+  home
 
       </a>
     </li>
@@ -200,14 +204,16 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../osinta.md" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
   
-  OSINT
+  docsdb
 
       </a>
     </li>
@@ -224,41 +230,7 @@
   
     
   
-  Ports
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../sys.md" class="md-tabs__link">
-        
-  
-    
-  
-  Sys
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../zerotrust.md" class="md-tabs__link">
-        
-  
-    
-  
-  ZeroTrust
+  ports
 
       </a>
     </li>
@@ -310,7 +282,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    home
     
   </span>
   
@@ -324,19 +296,110 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../osinta.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    docsdb
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    OSINT
+    docsdb
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    <span class="md-ellipsis">
+      security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    <span class="md-ellipsis">
+      network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      operating-systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crypto" class="md-nav__link">
+    <span class="md-ellipsis">
+      crypto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redteam" class="md-nav__link">
+    <span class="md-ellipsis">
+      redteam
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osint" class="md-nav__link">
+    <span class="md-ellipsis">
+      osint
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -352,49 +415,7 @@
         
   
   <span class="md-ellipsis">
-    Ports
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sys.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sys
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../zerotrust.md" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ZeroTrust
+    ports
     
   </span>
   
@@ -420,34 +441,47 @@
 
 
 
-<h1 id="osint">osint</h1>
-<h3 id="approaches">approaches</h3>
-<p><strong>passive</strong> collection: </p>
-<p>prefered way to gather information; you <strong><em>do not interact with the target(s)</em></strong> at all e.g. messaging, sending friend requests, liking posts, following their accounts. instead collecting information without ever making the target aware, providing better opsec. these include:</p>
+  <h1>docsdb</h1>
+
+<p>collection of documents; mostly pdf&rsquo;s with a few propietery epubs</p>
 <ul>
-<li>searching targets name online to find accounts</li>
-<li>looking up targets email address in data breaches and leaks</li>
-<li>saving posts, images and videos from a targets social media account</li>
-<li>looking up historical whois and dns record for a target domain</li>
+<li><a href="#security">security</a></li>
+<li><a href="#network">network</a></li>
+<li><a href="#operating-systems">operating-systems</a></li>
+<li><a href="#crypto">crypto</a></li>
+<li><a href="#redteam">redteam</a></li>
+<li><a href="#osint">osint</a></li>
 </ul>
-<p><strong>active</strong> collection: </p>
-<p>a way that is not reccommended and would have you making contact with the target, which could bring heat or risk spooking them into hiding thier online presence. this should be done properly using a sock puppet with a vpn or disposable vm. this includes:</p>
-<ul>
-<li>sending the target a friend or follow request from a sock account</li>
-<li>sending a private message of any kind</li>
-<li>liking, commenting or sharing the targets posts</li>
-<li>scanning a target website or device</li>
-</ul>
-<h3 id="phases">phases</h3>
-<p><strong>1. source identification</strong>: identify and locate potential information sources</p>
-<p><strong>2. intelligence collection</strong>: harvest information from locatedand newly discovered sources</p>
-<p><strong>3. data processing</strong>: process discovered infomation into a readable, organised and actionable case file</p>
-<p><strong>4. analysis</strong>: analyse discovered information to uncover pattern and new potential leads</p>
-<p><strong>5. reporting</strong>: prepare your discoveries for presentation and present it to superiors, clients or lawyers</p>
+<h2 id="security">security</h2>
+<p><a href="https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf">[PDF] the diamond model of intrusion analysis (2020)</a></p>
+<p><a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf">[PDF] zero trust architecture - national institute of standards and technology (2020)</a></p>
+<p><a href="https://inteltechniques.com/book7.html">[ePUB][PAID] extreme privacy - inteltechniques [5<sup>th</sup> edition (2024)]</a></p>
+<p><a href="https://www.virtualstarmedia.com/downloads/Forrester_zero_trust_DNA.pdf">[PDF] build security into your network dna - john.k (2010)</a></p>
+<h2 id="network">network</h2>
+<p><a href="https://intronetworks.cs.luc.edu/current1/ComputerNetworks.pdf">[PDF] an introduction to computer networks - peter.d (2020)</a></p>
+<p><a href="https://pages.di.unipi.it/ricci/501302.pdf">[PDF] understanding ip addressing - 3com (2001)</a></p>
+<h2 id="operating-systems">operating-systems</h2>
+<p><a href="https://markburgess.org/os/os.pdf">[PDF]a short introduction to operating systems - mark burgess (2001)</a></p>
+<p><a href="https://www.nobius.org/dbg/practical-file-system-design.pdf">[PDF] practical files system design - dominic.g (1999)</a></p>
+<h2 id="crypto">crypto</h2>
+<p><a href="https://joyofcryptography.com/pdf/book.pdf">[PDF] the joys of cryptography - mike.r (2021)</a></p>
+<h2 id="redteam">redteam</h2>
+<p><a href="https://web.archive.org/web/20240228065712/http://bib.opensourceintelligence.biz/STORAGE/2012.%20Red%20Team%20Handbook.pdf">[PDF] red team handbook - ufmcs (2012)</a></p>
+<p><a href="https://pages.cs.wisc.edu/~ace/media/gray-hat-hacking.pdf">[PDF] gray hat hacking - allen.h,shon.h,john.n,chris.e,gideon.n,terron.w (2011)</a></p>
+<h2 id="osint">osint</h2>
+<p><a href="https://web.archive.org/web/20210126020538/http://www.oss.net/dynamaster/file_archive/030201/ca5fb66734f540fbb4f8f6ef759b258c/NATO%20OSINT%20Handbook%20v1.2%20-%20Jan%202002.pdf">[PDF] open source intelligence handbook - nato (2001)</a></p>
+<p><a href="https://web.archive.org/web/20210903190144/https://bib.opensourceintelligence.biz/STORAGE/2004.%20Special%20operations%20forces%20open%20source%20intellingence%20(OSINT)%20handbook.pdf">[PDF] special operations forces osint handbook - usmc (2004)</a></p>
+<p><a href="https://web.archive.org/web/20210903190116/https://bib.opensourceintelligence.biz/STORAGE/2004.%20Sailing%20the%20sea%20of%20OSINT.pdf">[PDF] sailing the sea of osint in the information age - mercado.s [2004]</a></p>
+<p><a href="https://web.archive.org/web/20210903190138/https://bib.opensourceintelligence.biz/STORAGE/2016.%20Open%20source%20intelligence%20investigation.pdf">[PDF] open source intelligence investigation - advanced sciences and technologies for security applications (2016)</a></p>
+<p><a href="https://web.archive.org/web/20210903190205/https://bib.opensourceintelligence.biz/STORAGE/OSINT%20Handbook.pdf">[PDF] osint handbook - romanian intelligence service (2021)</a></p>
+<p><a href="https://irp.fas.org/eprint/ci-glossary.pdf">[PDF] counter intelligence glossary - mark.l (2007)</a></p>
+<p><a href="https://2151249094-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2f-mkyelmibvwvhksgo_iy%2fuploads%2faasxuxtf8bbpv8j5jefr%2f1_complete_list_of_osint_web_resources_light_ohshint.pdf?alt=media&amp;token=abe1890c-27dd-4dce-87b0-484a55fda4ed">[PDF] list of osint web resources - ohshint (2023)</a></p>
+<p><a href="https://2151249094-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2f-mkyelmibvwvhksgo_iy%2fuploads%2fjvykujqmkkgkb8gby9ov%2fohshint_all_things_osint_and_onlyfans_light.pdf?alt=media&amp;token=8b07ad7f-bf7c-4453-b268-5f7e41f50b62">[PDF] all things onlyfans - ohshint (2023)</a></p>
 <p><a href="https://www.ialeia.org/docs/psychology_of_intelligence_analysis.pdf">[PDF] psychology of intelligence analysis - heuer.r (1999)</a></p>
 <p><a href="https://www.justice.gov/criminal/criminal-ccips/page/file/1252341/dl?inline=">[PDF] legal considerations when gathering online cyber threat intelligence and purchasing data from ilicet sources - us department of justice (2020)</a></p>
 <p><a href="https://irp.fas.org/doddir/army/atp2-22-9-2017.pdf">[PDF] open source intelligence - us department of defence (2019)</a></p>
 <p><a href="https://irp.fas.org/doddir/army/atp2-22-9.pdf">[PDF] open source intelligence - us departmen of defence (2012)</a></p>
+<p><a href="https://inteltechniques.com/book1.html">[ePUB][PAID] osint techniques - inteltechniques [11<sup>th</sup> Edition(2024)]</a></p>
 
 
 
@@ -478,6 +512,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ports/" class="md-footer__link md-footer__link--next" aria-label="Next: ports">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                ports
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
