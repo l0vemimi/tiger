@@ -4,12 +4,17 @@ site_author: mimi
 site_url: https://l0vemimi.github.io/tigerdb/
 #edit_uri: edit/main/docs/ # if the repo is tied to the doc
 nav:
-  - home: 'index.md'
-  - docsdb: 'docsdb.md'
-  - ports: 'ports.md'
+  - Home: 'index.md'
+  - DocsDB: 'docsdb.md'
+  - Network: 'network.md'
+  - Offence: 'offence.md'
+  - OpSec: 'opsec.md'
+  - OSINT: 'osint.md'
+  - Ports: 'ports.md'
+  - ToolsDB: 'tools.md'
   
-extra_css:
-  - stylesheets/extra.css
+#extra_css:
+#  - stylesheets/extra.css
 dev_addr: 127.0.0.1:8000
 ################################
 ############# THEME ############
@@ -20,8 +25,8 @@ theme:
     primary: black
 #    primary: custom
     accent: red
-#    scheme: default  # light mode
-    scheme: slate    # dark mode
+    scheme: default  # light mode
+#    scheme: slate    # dark mode
       #
       # red; pink; purple; deep purple; indigo
       # blue; light blue; cyan; tea; green; light green
@@ -32,8 +37,9 @@ theme:
       #      text: Roboto Mono
 #  direction: ltr
 #  direction: rtl
-  favicon: 
-  logo: ass/tiger4.png
+  custom_dir: overrides
+  favicon: assets/images/tiger4.png
+  logo: assets/images/tiger4.png
   icon: 
 #    repo: fontawesome/brands/github-alt
 #    repo: fontawesome/brands/git

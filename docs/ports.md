@@ -1,4 +1,4 @@
-list of all known ports; use the searchbar to find a specific port number
+*Note: Use the searchbar to find a specific port.*
 
 - 1	tcpmux	TCP Port Service Multiplexer
 - 2	compressnet	Management Utility
